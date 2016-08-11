@@ -115,11 +115,11 @@ void Grid::add_cell_spin(size_t dim_row, size_t dim_col, int value)
 int main ( int argc, char* argv[] ) {
 
 	// Begin Flags
-    int Limit_Number_avalanches=1000000;
-	size_t num_cols = 1000;
-	size_t num_rows = 1000;
-	unsigned x_drop = 500;
-	unsigned y_drop = 500;
+    int Limit_Number_avalanches=5000;
+	size_t num_cols = 100;
+	size_t num_rows = 100;
+	unsigned x_drop = 49;
+	unsigned y_drop = 49;
 
 	cout << endl ;	
     int c ;
@@ -175,11 +175,11 @@ int main ( int argc, char* argv[] ) {
 	
 	// Deterministic sandpile
 	cout << endl;
-	cout << " \033[1m 2D Random-Rain Sandpile Model\033[0m" << endl;  //;31m
+	cout << " \033[1m 2D Deterministic-Rain Sandpile Model\033[0m" << endl;  //;31m
 	cout << endl;
 	
 	
-  	cout << " \033[1;34m Droping point: Random\033[0m\n";
+  	cout << " \033[1;34m Droping point: Determined\033[0m\n";
   	cout << " \033[1;34m Size: Lx=" << num_cols << "    " << "Ly=" << num_rows << "    Number of sites: " << num_cols*num_rows << "\033[0m" << endl;
   	cout << " \033[1;34m Number of simulated avalanches: " << Limit_Number_avalanches <<"\033[0m\n";
   	cout << endl;
